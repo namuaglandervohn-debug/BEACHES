@@ -1,0 +1,206 @@
+
+/* ===== GLOBAL RESETS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #ffeb3b !important;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  padding: 130px 0;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  background: white;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #0d6efd;
+  border: none;
+  font-weight: 600;
+}
+
+/* ===== SECTION HEADERS ===== */
+section h2 {
+  font-weight: 700;
+}
+
+/* ===== DESTINATION BUTTONS ===== */
+.dest-btn {
+  padding: 18px;
+  background: white;
+  border: 2px solid #0d6efd;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.dest-btn:hover {
+  background: #0d6efd;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* See More button */
+.see-more-btn {
+  display: inline-block;
+  background-color: #0d6efd;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+/* Change text when expanded fully */
+.see-more-btn::after {
+  content: "See Location";
+}
+
+.see-more-toggle:checked + .see-more-btn::after {
+  content: "See Less";
+}
+/* Hidden content */
+.see-more-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.see-more-toggle:checked ~ .see-more-content {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* Change text when expanded */
+.see-more-toggle:checked + .see-more-btn::after {
+  content: "Back";
+  margin-left: 4px;
+  font-size: 12px;
+  color: #fff;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+
+.success-message {
+  display: none;
+  background: #d1f7d1;
+  padding: 15px;
+  border-left: 5px solid #28a745;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#success:target {
+  display: block;
+}
+
+
+
+/* ===== GUIDE PAGE ===== */
+.guide-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* ===== REVIEW PAGE ==== */
+.review-card {
+  background: rgb(22, 162, 244);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #0d6efd;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.review-card h5 {
+  font-weight: 700;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+form .form-control {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
